@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="d-flex gap-2">
+    <label>x:
+      <input type="number" class="form-control" [(ngModel)]=x>
+    </label>
+    <label>y:
+      <input type="number" class="form-control" [(ngModel)]=y>
+    </label>
+    <div class="d-flex align-items-end">
+      <button class="btn btn-success" (click)="add(x, y)">Add</button>
+    </div>
+  </div>
+  <h2 class="h2">Centroid: {{getAverage(xs)}}, {{getAverage(ys)}}</h2>
+</div>
